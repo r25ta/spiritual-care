@@ -11,7 +11,7 @@ import { Worker } from '../models/worker';
 
 export class WorkersComponent {
 
-  workers: Worker[] = [
+  workers$: Worker[] = [
     {id: 1, name: 'Allan Kardec', nickName: 'Kardec', phone: '1199326-7932', born: '03/10/1804'},
     {id: 2, name: 'André Luiz', nickName: '', phone: '1198326-7979', born: '03/02/1879'},
     {id: 3, name: 'Francisco Candido Xavier', nickName: 'Chico Xavier', phone: '1198388-7932', born: '02/04/1910'},
@@ -23,6 +23,6 @@ export class WorkersComponent {
   clickedRows = new Set<Worker>();
 
   constructor(){
-    console.log(this.workers);
+    console.log(this.workers$);
   }
 }

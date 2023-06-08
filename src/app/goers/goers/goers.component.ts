@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Goer } from '../../models/goer';
+import { Goer } from '../models/goer';
 
 @Component({
   selector: 'app-goers',

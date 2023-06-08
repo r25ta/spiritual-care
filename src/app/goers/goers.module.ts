@@ -1,17 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GoersComponent } from './goers/goers/goers.component';
-import { AppMaterialModule } from '../shared/app-material/app-material.module';
-
-
+import { GoersComponent } from './goers/goers.component';
+import { SharedModule } from '../shared/shared.module';
+import { GoersRoutingModule } from './goers-routing.module';
 
 @NgModule({
-  declarations: [
-    GoersComponent
-  ],
-  imports: [
-    CommonModule,
-    AppMaterialModule
-  ]
+  declarations: [GoersComponent],
+  imports: [CommonModule, SharedModule, GoersRoutingModule],
 })
-export class GoersModule { }
+export class GoersModule {}

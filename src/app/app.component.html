@@ -1,4 +1,28 @@
 <mat-toolbar>
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="Example icon-button with a menu"
+  >
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="navWorkers()">
+      <mat-icon>groups</mat-icon>
+      <span>Workers</span>
+    </button>
+
+    <button mat-menu-item (click)="navGoers()">
+      <mat-icon>reduce_capacity</mat-icon>
+      <span>Goers</span>
+    </button>
+
+    <button mat-menu-item (click)="navBack()">
+      <mat-icon>keyboard_return</mat-icon>
+      <span>Back</span>
+    </button>
+  </mat-menu>
+
   <span>Spiritual Care</span>
 </mat-toolbar>
 <router-outlet></router-outlet>
