@@ -5,6 +5,10 @@
 /tmp
 /out-tsc
 /bazel-out
+/home/ronaldo/_DESENVOLVIMENTO/angular/spiritual-care/src/app/goers/services/dist
+/home/ronaldo/_DESENVOLVIMENTO/angular/spiritual-care/src/app/workers/workers/dist
+/home/ronaldo/_DESENVOLVIMENTO/angular/spiritual-care/src/app/workers/services/dist
+/home/ronaldo/_DESENVOLVIMENTO/angular/spiritual-care/src/app/goers/goers/dist
 
 # Node
 /node_modules
