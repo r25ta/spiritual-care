@@ -4,6 +4,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [],
@@ -13,6 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     MatTabsModule,
     MatIconModule,
+    MatProgressSpinnerModule,
   ],
 })
 export class AppMaterialModule {}

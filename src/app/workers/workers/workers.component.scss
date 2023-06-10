@@ -15,3 +15,15 @@
 .demo-row-is-clicked {
   font-weight: bold;
 }
+
+.loading-spinner{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50%;
+  background-color: lightgrey;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-size: smaller;
+  font-weight: bold;
+ }

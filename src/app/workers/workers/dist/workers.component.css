@@ -16,7 +16,7 @@
   font-weight: bold;
 }
 
-.loading-spinner{
+.loading-spinner {
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 50%;
@@ -26,4 +26,4 @@
   justify-content: center;
   font-size: smaller;
   font-weight: bold;
- }
+}
