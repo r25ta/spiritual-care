@@ -10,19 +10,28 @@
 
       <!-- Name Column -->
       <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <th mat-header-cell *matHeaderCellDef>
+          Name
+          <mat-icon aria-hidden="false" aria-label="name">{{ 'name' | goers }}</mat-icon>
+        </th>
         <td mat-cell *matCellDef="let element">{{ element.name }}</td>
       </ng-container>
 
       <!-- Weight Column -->
       <ng-container matColumnDef="phone">
-        <th mat-header-cell *matHeaderCellDef>Phone</th>
+        <th mat-header-cell *matHeaderCellDef>
+          Phone
+          <mat-icon aria-hidden="false" aria-label="phone">{{ 'phone' | goers }}</mat-icon>
+        </th>
         <td mat-cell *matCellDef="let element">{{ element.phone }}</td>
       </ng-container>
 
       <!-- Symbol Column -->
       <ng-container matColumnDef="born">
-        <th mat-header-cell *matHeaderCellDef>Born</th>
+        <th mat-header-cell *matHeaderCellDef>
+          Born
+          <mat-icon aria-hidden="false" aria-label="born">{{ 'born' | goers }}</mat-icon>
+        </th>
         <td mat-cell *matCellDef="let element">{{ element.born }}</td>
       </ng-container>
 

@@ -7,7 +7,7 @@ import { Observable, delay, first, tap } from 'rxjs';
   providedIn: 'root',
 })
 export class GoersService {
-  private readonly API: string = '../../../Xassets/goers.json';
+  private readonly API: string = '../../../assets/goers.json';
 
   //Injection Dependence
   constructor(private httpClient: HttpClient) {}

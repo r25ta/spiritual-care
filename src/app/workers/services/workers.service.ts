@@ -9,7 +9,7 @@ import { Worker } from '../models/worker';
   providedIn: 'root',
 })
 export class WorkersService {
-  private readonly API: string = '../../../assets/Xworkers.json';
+  private readonly API: string = '../../../assets/workers.json';
 
   //Injection HttpClient (ajax) into of the constructor service class
   constructor(private httpClient: HttpClient) {}

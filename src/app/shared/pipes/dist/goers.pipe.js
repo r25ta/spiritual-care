@@ -6,23 +6,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 exports.__esModule = true;
-exports.GoersService = void 0;
+exports.GoersPipe = void 0;
 var core_1 = require("@angular/core");
-var rxjs_1 = require("rxjs");
-var GoersService = /** @class */ (function () {
-    //Injection Dependence
-    function GoersService(httpClient) {
-        this.httpClient = httpClient;
-        this.API = '../../../assets/goers.json';
+var GoersPipe = /** @class */ (function () {
+    function GoersPipe() {
     }
-    GoersService.prototype.listAll = function () {
-        return this.httpClient.get(this.API).pipe(rxjs_1.first(), rxjs_1.delay(2000), rxjs_1.tap(function (goers) { return console.log(goers); }));
+    GoersPipe.prototype.transform = function (value) {
+        switch (value) {
+            case 'phone': return 'smartphone';
+            case 'name': return 'face';
+            case 'born': return 'airline_seat_flat';
+        }
+        return 'info';
     };
-    GoersService = __decorate([
-        core_1.Injectable({
-            providedIn: 'root'
+    GoersPipe = __decorate([
+        core_1.Pipe({
+            name: 'goers'
         })
-    ], GoersService);
-    return GoersService;
+    ], GoersPipe);
+    return GoersPipe;
 }());
-exports.GoersService = GoersService;
+exports.GoersPipe = GoersPipe;

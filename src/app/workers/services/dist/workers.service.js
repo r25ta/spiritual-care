@@ -13,7 +13,7 @@ var WorkersService = /** @class */ (function () {
     //Injection HttpClient (ajax) into of the constructor service class
     function WorkersService(httpClient) {
         this.httpClient = httpClient;
-        this.API = '../../../assets/Xworkers.json';
+        this.API = '../../../assets/workers.json';
     }
     //Method listAllWorkers returns the worker list
     WorkersService.prototype.listAllWorkers = function () {
