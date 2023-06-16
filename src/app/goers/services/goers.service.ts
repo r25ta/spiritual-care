@@ -7,7 +7,7 @@ import { Observable, delay, first, tap } from 'rxjs';
   providedIn: 'root',
 })
 export class GoersService {
-  private readonly API: string = '../../../assets/goers.json';
+  private readonly API: string = '../../../Xassets/goers.json';
 
   //Injection Dependence
   constructor(private httpClient: HttpClient) {}
@@ -15,7 +15,7 @@ export class GoersService {
   listAll(): Observable<Goer[]> {
     return this.httpClient.get<Goer[]>(this.API).pipe(
       first(),
-      delay(5000),
+      delay(2000),
       tap((goers) => console.log(goers))
     );
   }

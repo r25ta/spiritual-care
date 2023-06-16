@@ -9,7 +9,7 @@ import { Worker } from '../models/worker';
   providedIn: 'root',
 })
 export class WorkersService {
-  private readonly API: string = '../../../assets/workers.json';
+  private readonly API: string = '../../../assets/Xworkers.json';
 
   //Injection HttpClient (ajax) into of the constructor service class
   constructor(private httpClient: HttpClient) {}
@@ -18,7 +18,7 @@ export class WorkersService {
   listAllWorkers() {
     return this.httpClient.get<Worker[]>(this.API).pipe(
       first(),
-      delay(5000),
+      delay(2000),
       tap((workers) => console.log(workers))
     );
   }
