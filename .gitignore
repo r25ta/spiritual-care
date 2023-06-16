@@ -44,3 +44,17 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+src/app/goers/goers/dist/goers.component.js
+src/app/goers/services/dist/goers.service.js
+src/app/shared/app-material/dist/app-material.module.js
+src/app/shared/component/error-dialog/dist/error-dialog.component.js
+src/app/shared/dist/shared.module.js
+src/app/workers/services/dist/workers.service.js
+src/app/workers/workers/dist/workers.component.js
+src/app/goers/goers/dist/goers.component.js
+src/app/goers/services/dist/goers.service.js
+src/app/shared/app-material/dist/app-material.module.js
+.gitignore
+src/app/goers/services/dist/goers.service.js
+src/app/shared/app-material/dist/app-material.module.js
+src/app/workers/services/dist/workers.service.js

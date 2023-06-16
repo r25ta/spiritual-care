@@ -13,10 +13,10 @@ var GoersService = /** @class */ (function () {
     //Injection Dependence
     function GoersService(httpClient) {
         this.httpClient = httpClient;
-        this.API = '../../../assets/goers.json';
+        this.API = '../../../Xassets/goers.json';
     }
     GoersService.prototype.listAll = function () {
-        return this.httpClient.get(this.API).pipe(rxjs_1.first(), rxjs_1.delay(5000), rxjs_1.tap(function (goers) { return console.log(goers); }));
+        return this.httpClient.get(this.API).pipe(rxjs_1.first(), rxjs_1.delay(2000), rxjs_1.tap(function (goers) { return console.log(goers); }));
     };
     GoersService = __decorate([
         core_1.Injectable({

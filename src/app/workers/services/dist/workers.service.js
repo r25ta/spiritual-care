@@ -13,11 +13,11 @@ var WorkersService = /** @class */ (function () {
     //Injection HttpClient (ajax) into of the constructor service class
     function WorkersService(httpClient) {
         this.httpClient = httpClient;
-        this.API = '../../../assets/workers.json';
+        this.API = '../../../assets/Xworkers.json';
     }
     //Method listAllWorkers returns the worker list
     WorkersService.prototype.listAllWorkers = function () {
-        return this.httpClient.get(this.API).pipe(rxjs_1.first(), rxjs_1.delay(5000), rxjs_1.tap(function (workers) { return console.log(workers); }));
+        return this.httpClient.get(this.API).pipe(rxjs_1.first(), rxjs_1.delay(2000), rxjs_1.tap(function (workers) { return console.log(workers); }));
     };
     WorkersService = __decorate([
         core_1.Injectable({

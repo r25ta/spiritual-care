@@ -14,6 +14,7 @@ var toolbar_1 = require("@angular/material/toolbar");
 var tabs_1 = require("@angular/material/tabs");
 var icon_1 = require("@angular/material/icon");
 var progress_spinner_1 = require("@angular/material/progress-spinner");
+var dialog_1 = require("@angular/material/dialog");
 var AppMaterialModule = /** @class */ (function () {
     function AppMaterialModule() {
     }
@@ -27,6 +28,7 @@ var AppMaterialModule = /** @class */ (function () {
                 tabs_1.MatTabsModule,
                 icon_1.MatIconModule,
                 progress_spinner_1.MatProgressSpinnerModule,
+                dialog_1.MatDialogModule,
             ]
         })
     ], AppMaterialModule);
